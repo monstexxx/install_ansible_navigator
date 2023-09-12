@@ -1,0 +1,17 @@
+#add subciption
+subscription-manager register --username <username> --password <password> --auto-attach
+
+#install ansible core
+dnf install ansible-core
+
+#Install ansible navigator
+subscription-manager repos --enable ansible-automation-platform-2.2-for-rhel-8-x86_64-rpms
+
+#ansible navigator check version
+ansible-navigator
+
+#podman login
+podman login registry.redhat.io
+
+#donwload images ansible navigator
+ansible-navigator
